@@ -75,7 +75,7 @@ public:
         consensus.nMajorityRejectBlockOutdated = 950;
         consensus.nMajorityWindow = 1000;
         consensus.BIP34Height = 227931;
-        consensus.BIP34Hash = uint256S("0x01");
+        consensus.BIP34Hash = uint256S("0x0");
         consensus.powLimit = uint256S("0f000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffff");
         consensus.nPowTargetTimespan = 60 * 60; // two weeks
         consensus.nPowTargetSpacing = 1 * 60;
@@ -108,7 +108,7 @@ public:
 
         genesis = CreateGenesisBlock(1537840365, 12132137, 0x1e00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000001692c3b063609c6a3d4a21e43287d0b04834c5794e3022bfac69b3fbc42"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000000692c3b063609c6a3d4a21e43287d0b04834c5794e3022bfac69b3fbc42"));
         assert(genesis.hashMerkleRoot == uint256S("0xf0d4e9ae7ad6dd79ff82d83cb25d36b489cea123d7e44475d26428409c684f25"));
 
        /* vSeeds.push_back(CDNSSeedData(driverbbp.sipa.be", "seed.driver.sipa.be")); // Pieter Wuille
@@ -196,7 +196,7 @@ public:
 
         genesis = CreateGenesisBlock(1537840365, 12132137, 0x1e00ffff, 1, 50 * COIN);
         consensus.hashGenesisBlock = genesis.GetHash();
-        assert(consensus.hashGenesisBlock == uint256S("0x000001692c3b063609c6a3d4a21e43287d0b04834c5794e3022bfac69b3fbc42"));
+        assert(consensus.hashGenesisBlock == uint256S("0x000000692c3b063609c6a3d4a21e43287d0b04834c5794e3022bfac69b3fbc42"));
         assert(genesis.hashMerkleRoot == uint256S("0xf0d4e9ae7ad6dd79ff82d83cb25d36b489cea123d7e44475d26428409c684f25"));
 
         vFixedSeeds.clear();
